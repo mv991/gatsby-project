@@ -1,10 +1,26 @@
 import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
-
+import React, { useState } from "react";
+import { navigate } from "gatsby";
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    number: null,
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(formData, "FORMDATATA");
+    navigate("/thankyou");
+  }
+  function handleChange(e) {
+    setFormData((prev) => {
+      return { ...prev, [e.target.name]: e.target.value };
+    });
+  }
   return (
-    <div className="w-full h-[500px] relative">
-      <div className="h-[480px] md:w-[77%] w-[96%] lg:bg-[#FDFDFD] mx-auto flex gap-8 md:gap-[100px] lg:flex-row flex-col absolute middle-div lg:top-[-80px] rounded-lg p-4">
+    <div className="w-full min-h-[500px] h-fit relative">
+      <div className="lg:h-[480px] h-fit md:w-[77%] w-[96%] lg:bg-[#FDFDFD] mx-auto flex gap-8 lg:gap-[100px] lg:flex-row flex-col lg:absolute middle-div lg:top-[-80px] rounded-lg p-4">
         <div className="h-full lg:w-1/2 pl-3">
           <h1 className="text-4xl text-[#00357B] oswald  font-[500] mt-6">
             LEAVE A REQUEST
@@ -12,18 +28,33 @@ const Contact = () => {
           <p className="font-poppins text-[14px] mt-3 mb-6">
             to get a unique offer from our consultant.
           </p>
-          <form className="flex flex-col gap-4 mt-4">
+          <form
+            className="flex flex-col gap-4 mt-4"
+            onSubmit={(e) => handleSubmit(e)}
+          >
             <input
               placeholder="Full Name*"
               className="p-3 bg-[#F4F4F4] w-full rounded-md"
+              onChange={handleChange}
+              name="name"
+              value={formData.name}
+              required
             />
             <input
               placeholder="Email*"
               className="p-3 bg-[#F4F4F4] w-full rounded-md"
+              onChange={handleChange}
+              name="email"
+              value={formData.email}
+              required
             />
             <input
               placeholder="Phone Number*"
               className="p-3 bg-[#F4F4F4] w-full rounded-md"
+              onChange={handleChange}
+              name="number"
+              value={formData.number}
+              required
             />
             <button className="font-[600] text-lg font-poppins bg-[#00357B] py-3 md:max-w-[300px] max-w-[250px] text-white mt-3 rounded-md">
               SUBMIT NOW

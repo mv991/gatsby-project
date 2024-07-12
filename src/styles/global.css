@@ -1,48 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,body,* {
+html,
+body,
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 .backdrop {
-    background-color: rgba(0, 0, 0, 0.9);
-      z-index: 4;
-      overflow: hidden;
-      height: 100vh;
-      width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 4;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+.card {
+  background-color: rgba(0, 30, 45, 0.3);
+
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.carousal::-webkit-scrollbar {
+  display: none;
+}
+.amenity-card {
+  border-radius: 130% 100% 40px 40px;
+}
+.oswald {
+  font-family: oswald;
+}
+.payment-bg {
+  background-color: rgba(87, 144, 190, 0.2);
+}
+
+.blue-gradient {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(197, 220, 241, 1));
+}
+@media only screen and (min-width: 1020px) {
+  .middle-div {
+    left: 50%;
+    transform: translate(-50%, 0);
   }
-  .card {
-    background-color: rgba(0, 30, 45, 0.3);
-  
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-  }
-  .carousal::-webkit-scrollbar {
-  
-      display: none;
-    
-  }
-  .amenity-card {
-    border-radius: 130% 100% 40px 40px;
-  }
-  .oswald {
-   font-family: oswald;
-  }
-  .payment-bg{
-    background-color: rgba(87, 144, 190, 0.20)
-  }
-  
-  .blue-gradient {
-    background: linear-gradient(rgba(255, 255, 255, 0),rgba(197, 220, 241, 1));
-  }
-  @media only screen and (min-width: 1020px) {
-    .middle-div {
-      left: 50%;
-      transform: translate(-50%,0);
-    }
-  }
+}
+
+.sidebar {
+}

@@ -1,33 +1,39 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import React,{useRef,useEffect} from "react"
-export default function LightHouse({img,open,setOpen}) {
-
-    const modalWrapperRef = useRef(null);
-    const image = getImage(img);
+import React, { useRef, useEffect } from "react";
+export default function LightHouse({ lightboxImage, setLightboxImage }) {
+  const modalWrapperRef = useRef(null);
+  useEffect(() => {
     const handleClickOutside = (event) => {
-     
-      if (modalWrapperRef.current && !modalWrapperRef.current.contains(event.target)) {
-           document.body.style.overflowY = "scroll"
-          setOpen(false);
-         
+      if (lightboxImage && event.target.closest(".lightbox-wrapper") === null) {
+        // Check if the click is outside the lightbox content
+        console.log("ran");
+        document.body.style.overflowY = "scroll";
+        setLightboxImage(null);
       }
-       
-       ; 
-      
-    
     };
-    useEffect(() => {
-        document.addEventListener('click', handleClickOutside);
-        return () => {
-          document.removeEventListener('click', handleClickOutside);
-        };
-      }, [open]);
 
-    return(<>
+    document.addEventListener("click", handleClickOutside);
 
-    <div className="fixed top-0 left-0 h-screen w-screen backdrop flex justify-center items-center z-[7]">
-              <GatsbyImage src={img} alt="main-img" className="w-auto h-auto max-w-[90%] max-h-[90%]"   ref={modalWrapperRef}/>
-    </div>
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [lightboxImage, setLightboxImage]);
 
-    </>)
+  console.log(lightboxImage, "lig  ");
+  return (
+    <>
+      {lightboxImage && (
+        <div className="fixed top-0 left-0 h-screen w-screen backdrop bg-black flex justify-center items-center z-[7]">
+          <div className="lightbox-wrapper">
+            <GatsbyImage
+              image={getImage(
+                lightboxImage.childMarkdownRemark.frontmatter.image
+              )}
+              alt="main-img"
+            />
+          </div>
+        </div>
+      )}
+    </>
+  );
 }

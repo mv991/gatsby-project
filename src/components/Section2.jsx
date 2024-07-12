@@ -1,21 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import CarousalItem from "./CarousalItem";
 
 const Section2 = () => {
   const [indexes, setIndexes] = useState([0, 1]);
+  const indexesRef = useRef(indexes);
+
   useEffect(() => {
-    const interval = window.setInterval(() => {
-      if (indexes[0] === 0) {
-        setIndexes([2, 3]);
-      } else {
-        setIndexes([0, 1]);
-      }
-    }, 4000);
+    indexesRef.current = indexes;
+  }, [indexes]);
 
-    return () => clearInterval(interval);
-  }, []);
-
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIndexes((prevIndexes) => {
+  //       if (prevIndexes[0] === 0) {
+  //         return [2, 3];
+  //       } else {
+  //         return [0, 1];
+  //       }
+  //     });
+  //     return () => clearInterval(interval);
+  //   }, 4000);
+  // }, []);
   const data = useStaticQuery(graphql`
     query CarousalQuery {
       allFile(
@@ -52,8 +58,8 @@ const Section2 = () => {
           );
         })}
       </div>
-      <div className="w-full   mx-auto  gap-8 px-12  md:hidden flex justify-center">
-        {data?.allFile?.nodes.map((item, index) => {
+      <div className="w-full   sm:mx-auto  gap-8 sm:px-12  md:hidden flex justify-center">
+        {/* {data?.allFile?.nodes.map((item, index) => {
           return (
             indexes.includes(index) && (
               <CarousalItem
@@ -63,7 +69,7 @@ const Section2 = () => {
               />
             )
           );
-        })}
+        })} */}
       </div>
     </div>
   );
