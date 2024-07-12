@@ -1,5 +1,5 @@
 ---
 heading: 700 sqmt
 text: AREA STARTS FROM
-image: ../../images/img4.png
+image: ../../images/carousalImages/img4.png
 ---

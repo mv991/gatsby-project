@@ -4,7 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html,body,* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .backdrop {
     background-color: rgba(0, 0, 0, 0.9);
       z-index: 4;
@@ -17,4 +21,28 @@
   
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
+  }
+  .carousal::-webkit-scrollbar {
+  
+      display: none;
+    
+  }
+  .amenity-card {
+    border-radius: 130% 100% 40px 40px;
+  }
+  .oswald {
+   font-family: oswald;
+  }
+  .payment-bg{
+    background-color: rgba(87, 144, 190, 0.20)
+  }
+  
+  .blue-gradient {
+    background: linear-gradient(rgba(255, 255, 255, 0),rgba(197, 220, 241, 1));
+  }
+  @media only screen and (min-width: 1020px) {
+    .middle-div {
+      left: 50%;
+      transform: translate(-50%,0);
+    }
   }
