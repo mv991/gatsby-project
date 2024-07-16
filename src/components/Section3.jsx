@@ -47,11 +47,11 @@ const Section3 = () => {
             <h1 className="text-start w-full text-4xl font-oswald text-white font-[500] md:w-[400px] mr-auto w-[300px] ">
               WELCOME TO THE GLAMOUR OF HARBOUR LIGHTS
             </h1>
-            <p className="text-start w-full text-white font-poppins font-[300]">
+            <p className="text-start w-full text-white poppins font-[300]">
               Here waves, wonder, and love for the sea converge in a stunning
               52-storey collection of waterfront apartments.
             </p>
-            <p className="text-start w-full text-white mt-4 font-poppins font-[300]">
+            <p className="text-start w-full text-white mt-4 poppins font-[300]">
               Harbour Lights, a beacon of luxury and maritime passion, is the
               epitome of a waterfront dream. Experience the magic of Harbour
               Lights, where the beauty of the sea merges with residential bliss,

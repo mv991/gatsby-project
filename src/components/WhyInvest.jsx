@@ -37,7 +37,7 @@ const WhyInvest = () => {
             return (
               <div className="lg:w-[200px] w-[160px] h-fit flex flex-col place-items-center justify-items-center gap-3">
                 <GatsbyImage image={image} className="w-[60px] " />
-                <p className="text-center font-poppins lg:text-normal text-sm text-[#343434] font-[500]">
+                <p className="text-center poppins lg:text-normal text-sm text-[#343434] font-[500]">
                   {node.childMarkdownRemark.frontmatter.p}
                 </p>
               </div>
@@ -45,7 +45,7 @@ const WhyInvest = () => {
           })}
         </div>
         <button
-          className="px-12 py-3 text-sm bg-[#00357B] text-white rounded-md font-[500] mx-auto w-fit font-poppins mt-[70px] lg:mb-[140px] mb-[50px]"
+          className="px-12 py-3 text-sm bg-[#00357B] text-white rounded-md font-[500] mx-auto w-fit poppins mt-[70px] lg:mb-[140px] mb-[50px]"
           onClick={() => {
             setShow(true);
           }}

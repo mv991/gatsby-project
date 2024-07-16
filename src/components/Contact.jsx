@@ -25,7 +25,7 @@ const Contact = () => {
           <h1 className="text-4xl text-[#00357B] oswald  font-[500] mt-6">
             LEAVE A REQUEST
           </h1>
-          <p className="font-poppins text-[14px] mt-3 mb-6">
+          <p className="poppins text-[14px] mt-3 mb-6">
             to get a unique offer from our consultant.
           </p>
           <form
@@ -56,7 +56,7 @@ const Contact = () => {
               value={formData.number}
               required
             />
-            <button className="font-[600] text-lg font-poppins bg-[#00357B] py-3 md:max-w-[300px] max-w-[250px] text-white mt-3 rounded-md">
+            <button className="font-[600] text-lg poppins bg-[#00357B] py-3 md:max-w-[300px] max-w-[250px] text-white mt-3 rounded-md">
               SUBMIT NOW
             </button>
           </form>

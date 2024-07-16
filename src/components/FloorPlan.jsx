@@ -35,7 +35,7 @@ const FloorPlan = () => {
           <h1 className="text-3xl  font-[500] text-[#00357B] oswald w-[80%] md:w-full mx-auto">
             FLOOR PLANS OF ALL UNITS
           </h1>
-          <button className="md:w-1/2 font-poppins flex items-center justify-center gap-1 md:hidden  my-4 mx-auto bg-[#00357B] py-3 px-4 rounded-md text-white w-[230px] text-[14px] font-[500]">
+          <button className="md:w-1/2 poppins flex items-center justify-center gap-1 md:hidden  my-4 mx-auto bg-[#00357B] py-3 px-4 rounded-md text-white w-[230px] text-[14px] font-[500]">
             Choose a Bedroom
             <StaticImage
               src="../images/downArrow.png"
@@ -46,7 +46,7 @@ const FloorPlan = () => {
           <div className="w-full px-8 border-b-[1px] border-[#00357B] h-[40px]  justify-between md:flex hidden mt-8 gap-6">
             {data.allFile.nodes.map((h, index) => (
               <span
-                className={`text-[#00357B] text-[20px] font-[700] h-full font-poppins ${
+                className={`text-[#00357B] text-[20px] font-[700] h-full poppins ${
                   selected === index &&
                   "border-b-[1px] border-[#17ABFF] text-[#17ABFF]"
                 }`}
@@ -66,7 +66,7 @@ const FloorPlan = () => {
               />
             </div>
             <div className="md:w-1/2 m-6  flex flex-col text-start gap-1 min-h-[330px]">
-              <h1 className="md:text-2xl text-xl font-poppins font-[500]">
+              <h1 className="md:text-2xl text-xl poppins font-[500]">
                 {data.allFile.nodes[selected].childMarkdownRemark.frontmatter.h}{" "}
                 APARTMENT
               </h1>
@@ -77,11 +77,11 @@ const FloorPlan = () => {
                     .type
                 }
               </p>
-              <p className="font-poppins  text-sm mt-4">
+              <p className="poppins  text-sm mt-4">
                 {data.allFile.nodes[selected].childMarkdownRemark.frontmatter.p}
               </p>
               <div className="flex w-full justify-between ">
-                <p className="mt-3 font-poppins font-[400]">
+                <p className="mt-3 poppins font-[400]">
                   SPACE:{" "}
                   <span className="font-[600]">
                     {" "}
@@ -91,7 +91,7 @@ const FloorPlan = () => {
                     }
                   </span>
                 </p>
-                <p className="mt-3  font-poppins font-[400]">
+                <p className="mt-3  poppins font-[400]">
                   PRICE:{" "}
                   <span className="font-[600]">
                     {
@@ -103,12 +103,12 @@ const FloorPlan = () => {
               </div>
               <div className=" border-b-[1px] w-[98%] mx-auto mt-4 border-dashed border-[#323232]"></div>
               <div className="md:hidden flex w-full h-fit ">
-                <div className="w-1/2 flex flex-col border-r-[1px] gap-3 p-2 font-poppins border-dashed text-sm border-[#323232]">
+                <div className="w-1/2 flex flex-col border-r-[1px] gap-3 p-2 poppins border-dashed text-sm border-[#323232]">
                   <p>Living Area : 72.50M2</p>
                   <p>Kitchen : 72.50M2</p>
                   <p>Living Area : 72.50M2</p>
                 </div>
-                <div className="w-1/2 flex flex-col p-2 pl-3 text-end gap-3 font-poppins border-dashed text-sm border-[#323232]">
+                <div className="w-1/2 flex flex-col p-2 pl-3 text-end gap-3 poppins border-dashed text-sm border-[#323232]">
                   <p>Bathroom: 72.50M2</p>
                   <p>Bathroom : 72.50M2</p>
                   <p>Balcony : 72.50M2</p>
