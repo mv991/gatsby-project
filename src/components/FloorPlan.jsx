@@ -51,6 +51,7 @@ const FloorPlan = () => {
                   "border-b-[1px] border-[#17ABFF] text-[#17ABFF]"
                 }`}
                 key={index}
+                onClick={() => setSelected(index)}
               >
                 {h.childMarkdownRemark.frontmatter.h}
               </span>

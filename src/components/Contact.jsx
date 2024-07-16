@@ -19,8 +19,8 @@ const Contact = () => {
     });
   }
   return (
-    <div className="w-full min-h-[500px] h-fit relative">
-      <div className="lg:h-[480px] h-fit md:w-[77%] w-[96%] lg:bg-[#FDFDFD] mx-auto flex gap-8 lg:gap-[100px] lg:flex-row flex-col lg:absolute middle-div lg:top-[-80px] rounded-lg p-4">
+    <div className="w-full min-h-[500px] h-fit relative  mx-auto">
+      <div className="lg:h-[480px] h-fit md:w-[77%] max-w-[1400px] w-[96%] lg:bg-[#FDFDFD] mx-auto flex gap-8 lg:gap-[100px] lg:flex-row flex-col lg:absolute middle-div lg:top-[-80px] rounded-lg p-4">
         <div className="h-full lg:w-1/2 pl-3">
           <h1 className="text-4xl text-[#00357B] oswald  font-[500] mt-6">
             LEAVE A REQUEST
