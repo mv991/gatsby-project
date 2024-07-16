@@ -32,8 +32,6 @@ const Brochure = () => {
           alt="brochure-imgae"
           objectFit="cover"
           className="w-[110%] "
-          width={800}
-          height={600}
         />
       </div>
     </div>

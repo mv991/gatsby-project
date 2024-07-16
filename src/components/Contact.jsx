@@ -5,7 +5,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    number: null,
+    number: "",
   });
 
   function handleSubmit(e) {
