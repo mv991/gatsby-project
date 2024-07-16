@@ -1,6 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
-import React, { useState } from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import React from "react";
+
 import Card from "./Card";
 const HeroComponent = () => {
   return (
@@ -16,7 +16,7 @@ const HeroComponent = () => {
       <div className="w-full min-h-screen h-fit ">
         <div className="flex md:flex-row flex-col min-h-screen h-fit items-center md:pt-0  sm:pt-[230px] pt-[150px]  lg:w-[80%] w-[90%] mx-auto  lg:max-w-[1600px]">
           <div className="md:w-1/2 w-full flex flex-col  h-1/2 ">
-            <h1 className="text-3xl 2xl:text-6xl oswald md:w-[370px]   2xl:w-[550px] text-white font-semibold xl:leading-[60px] tracking-[2px]">
+            <h1 className="text-3xl 2xl:text-6xl oswald md:w-[370px]   2xl:w-[550px] text-white font-semibold 2xl:leading-[60px] tracking-[2px]">
               HARBOUR LIGHTS
               <br />
               DE <span className="text-[#17ABFF]"> GRESOGONO</span>

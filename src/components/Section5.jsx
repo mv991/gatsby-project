@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import LightHouse from "./LightboxSection";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 const Section5 = () => {
   const data = useStaticQuery(graphql`
@@ -32,7 +31,7 @@ const Section5 = () => {
       data?.allFile?.nodes?.slice(1).map((node, index) => {
         setImages((prev) => [...prev, node]);
       });
-  }, []);
+  }, [images.length, data?.allFile?.nodes]);
 
   const modalWrapperRefs = useRef([]);
 

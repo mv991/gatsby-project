@@ -29,10 +29,10 @@ body,
   border-radius: 130% 100% 40px 40px;
 }
 .oswald {
-  font-family: "Oswald", sans-serif;
+  font-family: "oswald";
 }
 .poppins {
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins";
 }
 .payment-bg {
   background-color: rgba(87, 144, 190, 0.2);

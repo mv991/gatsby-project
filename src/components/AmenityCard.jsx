@@ -7,8 +7,8 @@ const AmenityCard = ({ img, text }) => {
       <GatsbyImage
         image={image}
         alt="img"
-        width={200}
-        height={300}
+        width={150}
+        height={150}
         className=" bg-cover "
       />
       <h1 className="mt-3 w-[120px] mx-auto">{text}</h1>
