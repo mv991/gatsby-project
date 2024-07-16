@@ -123,7 +123,7 @@ const Section5 = () => {
               )}
               height={900}
               width={1500}
-              alt="img"
+              alt="lightbox-image"
               className="object-cover w-full h-full rounded-xl cursor-pointer"
             />
           </div>
@@ -131,13 +131,13 @@ const Section5 = () => {
             className="absolute z-[1] w-[60px] h-[60px] top-[50%] right-[10px] cursor-pointer"
             onClick={() => handleImageChange(+1, "carousel")}
           >
-            <StaticImage src="../images/arrow.png" width={60} />
+            <StaticImage src="../images/arrow.png" width={60} alt="arrow" />
           </div>
           <div
             className="absolute rotate-180 z-[1] w-[60px] h-[60px] top-[50%] left-[10px] cursor-pointer"
             onClick={() => handleImageChange(-1, "carousel")}
           >
-            <StaticImage src="../images/arrow.png" />
+            <StaticImage src="../images/arrow.png" alt="arrow-img" width={60} />
           </div>
         </div>
         <div className="flex gap-2 w-full max-w-full justify-between mt-2">
@@ -145,6 +145,7 @@ const Section5 = () => {
             const image = getImage(img.childMarkdownRemark.frontmatter.image);
             return (
               <div
+                key={index}
                 onClick={() => setLightboxImage(index + 1)}
                 className="w-[24%] sm:rounded-2xl rounded-md  cursor-pointer"
               >
@@ -189,13 +190,13 @@ const Section5 = () => {
               className="absolute z-[1] w-[60px] h-[60px] top-[50%] right-[10px] cursor-pointer"
               onClick={() => handleImageChange(+1, "lightbox")}
             >
-              <StaticImage src="../images/arrow.png" />
+              <StaticImage src="../images/arrow.png" width={60} alt="arrow" />
             </div>
             <div
               className="absolute rotate-180 z-[1] w-[60px] h-[60px] top-[50%] left-[10px] cursor-pointer"
               onClick={() => handleImageChange(-1, "lightbox")}
             >
-              <StaticImage src="../images/arrow.png" />
+              <StaticImage src="../images/arrow.png" width={60} alt="arrow" />
             </div>
           </div>
         </>

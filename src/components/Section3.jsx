@@ -26,6 +26,7 @@ const Section3 = () => {
         <StaticImage
           src="../images/section3BG.png"
           className="absolute z-[-1] inset-0 h-full"
+          alt="bg-image"
         />
         <div className="2xl:w-[80%] w-full flex lg:flex-row flex-col-reverse mx-auto h-fit gap-[6rem] md:mt-[80px] mt-6">
           <div className="lg:w-1/2 w-[90%] mx-auto ">
@@ -33,10 +34,12 @@ const Section3 = () => {
               <StaticImage
                 src="../images/section4Images/img1.png"
                 className="max-w-full"
+                alt="bg-image"
               />
               <StaticImage
                 src="../images/section4Images/img2.png"
                 className="absolute md:w-[300px] sm:w-[300px] w-[200px] h-auto bottom-[-60px] right-0"
+                alt="bg-image"
               />
             </div>
           </div>
@@ -79,7 +82,10 @@ const Section3 = () => {
         <div className="2xl:w-[70%] w-[90%] flex flex-row flex-wrap xl:gap-0 gap-2 justify-between mx-auto mt-[100px] mb-[5rem]">
           {data?.allFile?.nodes?.map((node, index) => {
             return (
-              <div className="lg:w-[200px] w-[150px] text-white h-fit flex flex-col items-start gap-3 mt-4 md:mt-0 ">
+              <div
+                className="lg:w-[200px] w-[150px] text-white h-fit flex flex-col items-start gap-3 mt-4 md:mt-0 "
+                key={index}
+              >
                 <h1 className="lg:text-5xl text-4xl font-[500] oswald">
                   {node.childMarkdownRemark.frontmatter.heading}
                 </h1>

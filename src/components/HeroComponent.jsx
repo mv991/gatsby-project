@@ -9,6 +9,7 @@ const HeroComponent = () => {
         src="../images/heroImage/landing-img.png"
         className=" absolute bottom-0 top-0  left-0 right-0 z-[-1] h-full"
         layout="fullWidth"
+        alt="landing-page-image"
       />
       <div className="w-full min-h-screen h-fit ">
         <div className="flex md:flex-row flex-col min-h-screen h-fit items-center md:pt-0  sm:pt-[230px] pt-[150px]  lg:w-[80%] w-[90%] mx-auto  lg:max-w-[1600px]">

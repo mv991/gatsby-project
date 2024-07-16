@@ -51,6 +51,7 @@ const Section2 = () => {
         {data?.allFile?.nodes.map((item, index) => {
           return (
             <CarousalItem
+              key={index}
               h={item?.childMarkdownRemark?.frontmatter.heading}
               p={item?.childMarkdownRemark?.frontmatter.text}
               img={item?.childMarkdownRemark?.frontmatter.image}

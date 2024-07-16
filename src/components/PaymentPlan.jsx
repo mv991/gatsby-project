@@ -52,6 +52,7 @@ const PaymentPlan = () => {
           className="absolute bottom-0 right-0 w-full  max-h-full "
           width={800}
           height={600}
+          alt="credit-card"
         />
       </div>
     </div>

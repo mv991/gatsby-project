@@ -45,6 +45,7 @@ const Section4 = () => {
             <AmenityCard
               img={node.childMarkdownRemark.frontmatter.image}
               text={node.childMarkdownRemark.frontmatter.text}
+              key={index}
             />
           ))}
           {/* <AmenityCard img={""} text={"frfrg"} p={"frf"}/> */}

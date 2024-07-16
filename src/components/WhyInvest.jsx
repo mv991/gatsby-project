@@ -35,8 +35,15 @@ const WhyInvest = () => {
           {data.allFile.nodes.map((node, index) => {
             const image = getImage(node.childMarkdownRemark.frontmatter.image);
             return (
-              <div className="lg:w-[200px] w-[160px] h-fit flex flex-col place-items-center justify-items-center gap-3">
-                <GatsbyImage image={image} className="w-[60px] " />
+              <div
+                className="lg:w-[200px] w-[160px] h-fit flex flex-col place-items-center justify-items-center gap-3"
+                key={index}
+              >
+                <GatsbyImage
+                  image={image}
+                  className="w-[60px] "
+                  alt="whyInvest"
+                />
                 <p className="text-center poppins lg:text-normal text-sm text-[#343434] font-[500]">
                   {node.childMarkdownRemark.frontmatter.p}
                 </p>
