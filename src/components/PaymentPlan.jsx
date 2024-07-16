@@ -50,6 +50,8 @@ const PaymentPlan = () => {
         <StaticImage
           src="../images/creditCardImage.png"
           className="absolute bottom-0 right-0 w-full  max-h-full "
+          width={800}
+          height={600}
         />
       </div>
     </div>

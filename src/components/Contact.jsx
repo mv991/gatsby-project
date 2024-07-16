@@ -69,6 +69,8 @@ const Contact = () => {
           <StaticImage
             src="../images/footerImage.png"
             className="mt-2 object-cover"
+            width={800}
+            height={600}
           />
         </div>
       </div>

@@ -131,7 +131,7 @@ const Section5 = () => {
             className="absolute z-[1] w-[60px] h-[60px] top-[50%] right-[10px] cursor-pointer"
             onClick={() => handleImageChange(+1, "carousel")}
           >
-            <StaticImage src="../images/arrow.png" />
+            <StaticImage src="../images/arrow.png" width={60} />
           </div>
           <div
             className="absolute rotate-180 z-[1] w-[60px] h-[60px] top-[50%] left-[10px] cursor-pointer"

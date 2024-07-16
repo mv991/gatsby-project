@@ -86,6 +86,7 @@ module.exports = {
       {
         resolve: `gatsby-omni-font-loader`,
         options: {
+            mode: "async",
           enableListener: true,
           preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
           web: [
