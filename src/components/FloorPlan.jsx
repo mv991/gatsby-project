@@ -63,8 +63,8 @@ const FloorPlan = () => {
                 src="../images/floorImages/mapImage.png"
                 alt="apartment-blueprint-image"
                 className="max-w-[500px] "
-                width={500}
-                height={500}
+                // width={500}
+                // height={500}
               />
             </div>
             <div className="md:w-1/2 m-6  flex flex-col text-start gap-1 min-h-[330px]">

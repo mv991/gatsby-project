@@ -22,7 +22,7 @@ const LocationSection = () => {
       }
     }
   `);
-  console.log(data, "locationdata");
+
   return (
     <div className="2xl:w-[80%] w-[90%] max-w-[1400px] mx-auto h-fit text-center pt-10 lg:mt-[350px]">
       <h1 className="text-4xl oswald font-[500] text-[#00357B] mb-5">

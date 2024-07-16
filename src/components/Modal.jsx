@@ -10,7 +10,7 @@ const Modal = ({ setShow }) => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formData, "FORMDATATA");
+
     navigate("/thankyou");
   }
   function handleChange(e) {

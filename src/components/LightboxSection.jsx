@@ -9,7 +9,6 @@ export default function LightHouse({ lightboxImage, setLightboxImage }) {
       !modalWrapperRef.current.contains(event.target) &&
       lightboxImage !== null
     ) {
-      console.log("outside");
       document.body.style.overflowY = "scroll";
       setLightboxImage(null);
     }
@@ -20,7 +19,6 @@ export default function LightHouse({ lightboxImage, setLightboxImage }) {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-  console.log(lightboxImage, "lig  ");
   return (
     <>
       {lightboxImage && (

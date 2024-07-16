@@ -19,15 +19,17 @@ const Section3 = () => {
       }
     }
   `);
-  console.log(data, "section 4 data");
+
   return (
     <>
       <div className="w-full min-h-[700px] h-fit relative md:p-8 p-2 mt-[80px]">
-        <StaticImage
-          src="../images/section3BG.png"
-          className="absolute z-[-1] inset-0 h-full"
-          alt="bg-image"
-        />
+        <div className="absolute z-[-1] inset-0 h-full w-full">
+          <StaticImage
+            src="../images/section3BG.png"
+            className="absolute z-[-1] inset-0 h-full w-full"
+            alt="bg-image"
+          />
+        </div>
         <div className="2xl:w-[80%] w-full flex lg:flex-row flex-col-reverse mx-auto h-fit gap-[6rem] md:mt-[80px] mt-6">
           <div className="lg:w-1/2 w-[90%] mx-auto ">
             <div className="md:w-[600px] max-w-full w-full mx-auto relative">
@@ -36,25 +38,26 @@ const Section3 = () => {
                 className="max-w-full"
                 alt="bg-image"
               />
-              <StaticImage
-                src="../images/section4Images/img2.png"
-                className="absolute md:w-[300px] sm:w-[300px] w-[200px] h-auto bottom-[-60px] right-0"
-                alt="bg-image"
-              />
+              <div className="absolute md:w-[300px] sm:w-[300px] w-[200px] h-auto bottom-[-60px] right-0">
+                <StaticImage
+                  src="../images/section4Images/img2.png"
+                  alt="bg-image"
+                />
+              </div>
             </div>
           </div>
           <div className="lg:w-1/2  w-[90%] mx-auto flex flex-col items-center text-start gap-4">
-            <p className="text-start w-full text-[#17ABFF] font-[500] text-[17px]">
+            <p className="text-start w-full text-[#17ABFF] font-[500] text-[20px]">
               DAMAC PRESENTS
             </p>
-            <h1 className="text-start w-full text-4xl font-oswald text-white font-[500] md:w-[400px] mr-auto w-[300px] ">
+            <h1 className="text-start w-full text-4xl oswald text-white font-[500] md:w-[400px] mr-auto w-[300px] ">
               WELCOME TO THE GLAMOUR OF HARBOUR LIGHTS
             </h1>
-            <p className="text-start w-full text-white poppins font-[300]">
+            <p className="text-start w-full text-white text-lg poppins font-[300]">
               Here waves, wonder, and love for the sea converge in a stunning
               52-storey collection of waterfront apartments.
             </p>
-            <p className="text-start w-full text-white mt-4 poppins font-[300]">
+            <p className="text-start w-full text-white text-lg mt-4 poppins font-[300]">
               Harbour Lights, a beacon of luxury and maritime passion, is the
               epitome of a waterfront dream. Experience the magic of Harbour
               Lights, where the beauty of the sea merges with residential bliss,

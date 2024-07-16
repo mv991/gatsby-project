@@ -10,7 +10,7 @@ const Contact = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formData, "FORMDATATA");
+
     navigate("/thankyou");
   }
   function handleChange(e) {
@@ -69,8 +69,6 @@ const Contact = () => {
           <StaticImage
             src="../images/footerImage.png"
             className="mt-2 object-cover"
-            width={800}
-            height={600}
             alt="fo0ter-image"
           />
         </div>

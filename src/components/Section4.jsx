@@ -22,7 +22,7 @@ const Section4 = () => {
       }
     }
   `);
-  console.log(data, "data");
+
   return (
     <div className="w-full h-fit flex flex-col items-center text-center pt-12 gap-3">
       <StaticImage
@@ -31,7 +31,7 @@ const Section4 = () => {
         class="w-[200px] h-auto"
         width={200}
       />
-      <h1 className="sm:text-4xl text-[31px] text-[#00357B] font-semibold font-oswald">
+      <h1 className="sm:text-4xl text-[31px] text-[#00357B] font-semibold oswald">
         FEATURES & AMENETIES
       </h1>
       <p className="text-lg lg:w-[800px] sm:w-[90%] w-[85%] poppins ">

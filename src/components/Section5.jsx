@@ -37,13 +37,11 @@ const Section5 = () => {
   const modalWrapperRefs = useRef([]);
 
   const handleClickOutside = (event) => {
-    console.log(modalWrapperRefs, "refs");
     if (
       modalWrapperRefs.current &&
       !modalWrapperRefs.current[0]?.contains(event.target) &&
       !modalWrapperRefs.current[1]?.contains(event.target)
     ) {
-      console.log("outside");
       document.body.style.overflowY = "scroll";
       setLightboxImage(null);
     }
@@ -112,7 +110,6 @@ const Section5 = () => {
           <div
             onClick={() => {
               setLightboxImage(mainImg);
-              console.log(mainImg, "mainImg");
             }}
             className="object-cover rounded-xl h-[300px] 2xl:h-[500px] cursor-pointer"
           >
@@ -162,15 +159,7 @@ const Section5 = () => {
           })}
         </div>
       </div>
-      {console.log(
-        data?.allFile?.nodes[lightboxImage]?.childMarkdownRemark.frontmatter
-          .image,
-        getImage(
-          data?.allFile?.nodes[lightboxImage]?.childMarkdownRemark.frontmatter
-            .image
-        ),
-        "image"
-      )}
+
       {lightboxImage !== null && (
         <>
           <div className="fixed top-0 left-0 h-screen w-screen backdrop bg-black flex justify-center items-center z-[7]"></div>

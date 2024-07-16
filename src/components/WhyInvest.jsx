@@ -24,7 +24,7 @@ const WhyInvest = () => {
       }
     }
   `);
-  console.log(data, "whyinvest data");
+
   return (
     <>
       <div className="w-full bg-[#F1F7FD] lg:min-h-[500px] h-fit md:mt-[100px] mt-[60px] flex flex-col">

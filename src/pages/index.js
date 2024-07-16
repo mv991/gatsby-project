@@ -16,7 +16,7 @@ const IndexPage = () => {
       <div className="w-full min-h-screen h-fit  ">
            <Navbar/>
            <HeroComponent/>
-           {/* <Section2/> */}
+           <Section2/>
            <Section4 />
            <Section3/>
            <div className="flex 2xl:w-[70%] max-w-[1400px] w-[90%] gap-2 mx-auto md:justify-end justify-center mt-8 mb-2">

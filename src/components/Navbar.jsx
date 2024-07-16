@@ -5,7 +5,7 @@ import MobileNavbar from "./MobileNavbar";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [mobile, setMobile] = useState(false);
-  console.log(mobile);
+
   return (
     <>
       <div
@@ -42,7 +42,6 @@ const Navbar = () => {
             className="sm:hidden block"
             onClick={() => {
               setMobile(true);
-              console.log("clicked");
             }}
           >
             <rect

@@ -1,7 +1,6 @@
 import React from "react";
 
 const MobileNavbar = ({ setMobile, setShow, mobile }) => {
-  console.log("ran");
   return (
     <div
       className={`fixed bg-black w-screen h-screen inset-0 flex sidebar items-center justify-center sidebar text-center z-[2] ${
