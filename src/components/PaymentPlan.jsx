@@ -45,13 +45,14 @@ const PaymentPlan = () => {
         </div>
       </div>
       <div className="w-[40%] h-auto min-h-[500px]  relative md:block hidden">
-        <StaticImage
-          src="../images/creditCardImage.png"
-          className="absolute bottom-0 right-0 w-full  max-h-full "
-          width={800}
-          height={600}
-          alt="credit-card"
-        />
+        <div className="absolute bottom-0 right-0 w-full  max-h-full ">
+          <StaticImage
+            src="../images/creditCardImage.png"
+            width={800}
+            height={600}
+            alt="credit-card"
+          />
+        </div>
       </div>
     </div>
   );
