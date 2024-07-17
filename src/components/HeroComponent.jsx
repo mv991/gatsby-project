@@ -21,13 +21,13 @@ const HeroComponent = () => {
               <br />
               DE <span className="text-[#17ABFF]"> GRESOGONO</span>
             </h1>
-            <p className="text-white font-semibold text-2xl mt-4 md:w-[400px] 2xl:w-[490px] max-w-full poppins">
+            <p className="text-white font-semibold text-2xl mt-4 md:w-[400px] 2xl:w-[490px] max-w-full ">
               1, 2 & 3 Bedrooms Seaside Apartments in Dubai Maritime City
             </p>
-            <div className="h-fit w-[360px] card p-3 mt-[50px] font-[200] border-l-2 border-[#17ABFF] text-white max-w-[90%] poppins">
+            <div className="h-fit w-[360px] card p-3 mt-[50px] font-[200] border-l-2 border-[#17ABFF] text-white max-w-[90%] ">
               Rental Returns of <span className="font-[400]">UPTO 11%**</span>
             </div>
-            <div className="h-fit w-[360px] card p-3 mt-3 font-[200] border-l-2 border-[#17ABFF] text-white poppins max-w-[90%]">
+            <div className="h-fit w-[360px] card p-3 mt-3 font-[200] border-l-2 border-[#17ABFF] text-white  max-w-[90%]">
               Capital Appreciation of{" "}
               <span className="font-[400]">UPTO 32%**</span>
             </div>

@@ -28,7 +28,7 @@ const LocationSection = () => {
       <h1 className="text-4xl oswald font-[500] text-[#00357B] mb-5">
         LOCATION
       </h1>
-      <p className="lg:w-[60%] w-[90%] mx-auto poppins font-[500] mt-3 mb-8">
+      <p className="lg:w-[60%] w-[90%] mx-auto  font-[500] mt-3 mb-8">
         Strategically located between Port Rashid and Dubai’s Drydocks World,
         Dubai Maritime City capitalises on its strengths, bringing together the
         entire maritime industry and offering residents a dynamic, urban
@@ -47,7 +47,7 @@ const LocationSection = () => {
       </div>
       <div className="w-full md:h-[180px] rounded-xl mt-4 flex md:flex-row flex-col md:items-center gap-4 bg-[#00357B] md:pr-6 p-6">
         <div className="md:w-1/4 w-full flex items-end md:justify-center">
-          <h2 className="text-2xl poppins font-[450]  poppins text-white w-[100px] ">
+          <h2 className="text-2xl  font-[450]   text-white w-[100px] ">
             FAMOUS LANDMARKS NEARBY
           </h2>
           <StaticImage
@@ -66,7 +66,7 @@ const LocationSection = () => {
               key={index}
             >
               <GatsbyImage image={image} alt="Main Image" className=" " />
-              <p className="text-white font-[300]  text-[15px] poppins">
+              <p className="text-white font-[300]  text-[15px] ">
                 {node.childMarkdownRemark.frontmatter.p}
               </p>
               <h1 className="text-2xl text-white font-[500] oswald">

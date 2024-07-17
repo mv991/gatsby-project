@@ -9,9 +9,7 @@ const CarousalItem = ({ h, p, img }) => {
       <h1 className="xl:text-4xl text-2xl oswald text-[#00357B] font-semibold">
         {h}
       </h1>
-      <h1 className="text-[#00357B] xl:text-lg  text-center poppins font-medium">
-        {p}
-      </h1>
+      <p className="text-[#00357B] xl:text-lg  text-center  ">{p}</p>
       <GatsbyImage
         image={image}
         className="mb-2  xl:w-[50px] w-[40px] "

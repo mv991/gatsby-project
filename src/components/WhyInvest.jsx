@@ -44,7 +44,7 @@ const WhyInvest = () => {
                   className="w-[60px] "
                   alt="whyInvest"
                 />
-                <p className="text-center poppins lg:text-normal text-sm text-[#343434] font-[500]">
+                <p className="text-center  lg:text-normal text-sm text-[#343434] font-[500]">
                   {node.childMarkdownRemark.frontmatter.p}
                 </p>
               </div>
@@ -52,7 +52,7 @@ const WhyInvest = () => {
           })}
         </div>
         <button
-          className="px-12 py-3 text-sm bg-[#00357B] text-white rounded-md font-[500] mx-auto w-fit poppins mt-[70px] lg:mb-[140px] mb-[50px]"
+          className="px-12 py-3 text-sm bg-[#00357B] text-white rounded-md font-[500] mx-auto w-fit  mt-[70px] lg:mb-[140px] mb-[50px]"
           onClick={() => {
             setShow(true);
           }}

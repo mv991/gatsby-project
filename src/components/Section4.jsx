@@ -31,10 +31,10 @@ const Section4 = () => {
         class="w-[200px] h-auto"
         width={200}
       />
-      <h1 className="sm:text-4xl text-[31px] text-[#00357B] font-semibold oswald">
+      <h1 className="sm:text-4xl text-[31px] text-[#00357B] font-semibold ">
         FEATURES & AMENETIES
       </h1>
-      <p className="text-lg lg:w-[800px] sm:w-[90%] w-[85%] poppins ">
+      <p className="text-lg lg:w-[800px] sm:w-[90%] w-[85%]  ">
         Harbour Lights beautifully honours maritime voyages while embracing an
         opulent seafront lifestyle. Its maritime-inspired amenities provide an
         unmatched seaside experience, offering a life of tranquility and bliss.

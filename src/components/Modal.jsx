@@ -68,7 +68,7 @@ const Modal = ({ setShow }) => {
               value={formData.number}
               name="number"
             />
-            <button className="font-[600] text-lg poppins bg-[#00357B] py-3 w-[300px] mx-auto max-w-[250px] text-white mt-3 rounded-md">
+            <button className="font-[600] text-lg  bg-[#00357B] py-3 w-[300px] mx-auto max-w-[250px] text-white mt-3 rounded-md">
               SUBMIT NOW
             </button>
           </form>

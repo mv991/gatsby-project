@@ -5,13 +5,11 @@ const Brochure = () => {
   return (
     <div className="xl:w-[1118px] w-full bg-[#00357B] overflow-hidden flex lg:flex-row flex-col h-fit lg:rounded-xl lg:absolute middle-div lg:bottom-[-320px]">
       <div className="lg:w-[45%] flex flex-col px-8 md:py-12">
-        <p className="text-xl text-[#17ABFF] poppins mt-8 md:mt-0">
-          IN A NUTSHELL
-        </p>
+        <p className="text-xl text-[#17ABFF]  mt-8 md:mt-0">IN A NUTSHELL</p>
         <h1 className="oswald text-4xl my-3 text-white font-[500]">
           DOWNLOAD BROCHURE
         </h1>
-        <p className="poppins text-white FONT-[300]">
+        <p className=" text-white FONT-[300]">
           Harbour Lights de GRISOGONO Geneve is a residential tower in the heart
           of Dubai Maritime City. Future residents can choose from a number of
           1–3 bedroom branded residences. Certain premises come with a private

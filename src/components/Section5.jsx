@@ -1,37 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
-const Section5 = () => {
-  const data = useStaticQuery(graphql`
-    query lightboxQuery {
-      allFile(
-        filter: { sourceInstanceName: { eq: "lightbox" } }
-        sort: { name: ASC }
-      ) {
-        nodes {
-          childMarkdownRemark {
-            frontmatter {
-              image {
-                childImageSharp {
-                  gatsbyImageData
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
+const Section5 = ({ data, images, setImages }) => {
   const [mainImg, setMainImg] = useState(0);
-  const [images, setImages] = useState([]);
+
   const [lightboxImage, setLightboxImage] = useState(null);
-  useEffect(() => {
-    images.length === 0 &&
-      data?.allFile?.nodes?.slice(1).map((node, index) => {
-        setImages((prev) => [...prev, node]);
-      });
-  }, [images.length, data?.allFile?.nodes]);
 
   const modalWrapperRefs = useRef([]);
 
@@ -51,23 +24,7 @@ const Section5 = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-  function handleImageChange(direction) {
-    if (direction === -1 && mainImg > 0) {
-      const newImgs = data?.allFile?.nodes.filter(
-        (image, index) => index !== mainImg - 1
-      );
-      setImages([...newImgs]);
 
-      setMainImg(mainImg - 1);
-    } else if (direction === 1 && mainImg < 4) {
-      const newImgs = data?.allFile?.nodes.filter(
-        (image, index) => index !== mainImg + 1
-      );
-
-      setImages([...newImgs]);
-      setMainImg(mainImg + 1);
-    }
-  }
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
     return () => {
@@ -77,16 +34,12 @@ const Section5 = () => {
   function handleImageChange(direction, origin) {
     if (origin === "carousel") {
       if (direction === -1 && mainImg > 0) {
-        const newImgs = data?.allFile?.nodes.filter(
-          (image, index) => index !== mainImg - 1
-        );
+        const newImgs = data?.filter((image, index) => index !== mainImg - 1);
         setImages([...newImgs]);
 
         setMainImg(mainImg - 1);
       } else if (direction === 1 && mainImg < 4) {
-        const newImgs = data?.allFile?.nodes.filter(
-          (image, index) => index !== mainImg + 1
-        );
+        const newImgs = data?.filter((image, index) => index !== mainImg + 1);
 
         setImages([...newImgs]);
         setMainImg(mainImg + 1);
@@ -114,8 +67,7 @@ const Section5 = () => {
           >
             <GatsbyImage
               image={getImage(
-                data?.allFile?.nodes[mainImg]?.childMarkdownRemark.frontmatter
-                  .image
+                data[mainImg]?.childMarkdownRemark.frontmatter.image
               )}
               height={900}
               width={1500}
@@ -168,8 +120,7 @@ const Section5 = () => {
           >
             <GatsbyImage
               image={getImage(
-                data?.allFile?.nodes[lightboxImage]?.childMarkdownRemark
-                  .frontmatter.image
+                data[lightboxImage]?.childMarkdownRemark.frontmatter.image
               )}
               alt="main-img"
               class="h-full w-full rounded-[30px]"

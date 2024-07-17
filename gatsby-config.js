@@ -19,15 +19,7 @@ module.exports = {
           path: `${__dirname}/src/images`,  // Adjust this to your markdown path
         },
       },
-      // {
-      //   resolve: `gatsby-source-filesystem`,
-      //   options: {
-      //     // The unique name for each instance
-      //     name: `markdown`,
-      //     // Path to the directory
-      //     path: `${__dirname}/src/markdown/`,S
-      //   },
-      // },
+   
       {
         resolve: `gatsby-source-filesystem`,
         options: {
@@ -49,7 +41,7 @@ module.exports = {
           path: `${__dirname}/src/markdown/dmaccPresents`,  // Adjust this to your markdown path
         },
       },
-      {
+          {
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `lightbox`,

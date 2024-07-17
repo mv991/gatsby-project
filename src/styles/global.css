@@ -8,6 +8,7 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
 .backdrop {
   background-color: rgba(0, 0, 0, 0.9);
@@ -28,12 +29,10 @@ body,
 .amenity-card {
   border-radius: 130% 100% 40px 40px;
 }
-.oswald {
-  font-family: "oswald";
+h1 {
+  font-family: "oswald", sans-serif;
 }
-.poppins {
-  font-family: "poppins";
-}
+
 .payment-bg {
   background-color: rgba(87, 144, 190, 0.2);
 }

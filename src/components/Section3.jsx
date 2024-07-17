@@ -53,11 +53,11 @@ const Section3 = () => {
             <h1 className="text-start w-full text-4xl oswald text-white font-[500] md:w-[400px] mr-auto w-[300px] ">
               WELCOME TO THE GLAMOUR OF HARBOUR LIGHTS
             </h1>
-            <p className="text-start w-full text-white text-lg poppins font-[300]">
+            <p className="text-start w-full text-white text-lg  font-[300]">
               Here waves, wonder, and love for the sea converge in a stunning
               52-storey collection of waterfront apartments.
             </p>
-            <p className="text-start w-full text-white text-lg mt-4 poppins font-[300]">
+            <p className="text-start w-full text-white text-lg mt-4  font-[300]">
               Harbour Lights, a beacon of luxury and maritime passion, is the
               epitome of a waterfront dream. Experience the magic of Harbour
               Lights, where the beauty of the sea merges with residential bliss,
@@ -101,15 +101,10 @@ const Section3 = () => {
           })}
         </div>
         <div className="w-full flex items-center justify-center my-12">
-          <iframe
-            className="max-w-[98%]"
-            width="760"
-            height="415"
-            src={`https://www.youtube.com/embed/Qms4k6y7OgI`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded YouTube Video"
-          ></iframe>
+          <video muted controls className="max-w-[98%] w-[768px] " width={768}>
+            <source src="/videos/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
       {show && <Modal setShow={setShow} />}
