@@ -8,7 +8,7 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .backdrop {
   background-color: rgba(0, 0, 0, 0.9);
@@ -30,7 +30,7 @@ body,
   border-radius: 130% 100% 40px 40px;
 }
 h1 {
-  font-family: "oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .payment-bg {
