@@ -77,3 +77,9 @@ export const  data = graphql`
       }
     }
   `
+export const Head = () => (
+  <>
+    <title>DMACC Website</title>
+    <meta name="description" content="DMACC Website" />
+  </>
+)
