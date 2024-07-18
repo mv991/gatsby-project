@@ -16,12 +16,12 @@ const HeroComponent = () => {
       <div className="w-full min-h-screen h-fit ">
         <div className="flex md:flex-row flex-col min-h-screen h-fit items-center md:pt-0  sm:pt-[230px] pt-[150px]  lg:w-[80%] w-[90%] mx-auto  lg:max-w-[1600px]">
           <div className="md:w-1/2 w-full flex flex-col  h-1/2 ">
-            <h1 className="text-3xl 2xl:text-6xl oswald md:w-[370px]   2xl:w-[550px] text-white font-semibold 2xl:leading-[73px] tracking-[2px]">
+            <h1 className="text-3xl 2xl:text-6xl    2xl:w-[550px] text-white font-semibold 2xl:leading-[73px] tracking-[2px]">
               HARBOUR LIGHTS
               <br />
               DE <span className="text-[#17ABFF] oswald"> GRESOGONO</span>
             </h1>
-            <p className="text-white font-semibold text-2xl mt-4 md:w-[400px] 2xl:w-[490px] max-w-full ">
+            <p className="text-white sm:font-semibold font-[500] sm:text-2xl text-[1rem] mt-4 md:w-[400px] w-[300px] 2xl:w-[490px] max-w-full ">
               1, 2 & 3 Bedrooms Seaside Apartments in Dubai Maritime City
             </p>
             <div className="h-fit w-[360px] card p-3 mt-[50px] font-[200] border-l-2 border-[#17ABFF] text-white max-w-[90%] ">

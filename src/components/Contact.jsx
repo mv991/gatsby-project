@@ -65,11 +65,12 @@ const Contact = () => {
             policy and data return
           </p>
         </div>
-        <div className="lg:w-1/2 h-full">
+        <div className="lg:w-1/2 h-full lg:h-[500px]">
           <StaticImage
             src="../images/footerImage.png"
             className="mt-2 object-cover"
-            alt="fo0ter-image"
+            alt="footer-image"
+            height={500}
           />
         </div>
       </div>
