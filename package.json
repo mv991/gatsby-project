@@ -14,12 +14,15 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/oswald": "^5.0.20",
+    "@fontsource/poppins": "^5.0.14",
     "autoprefixer": "^10.4.19",
     "gatsby": "^5.13.5",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-postcss": "^6.13.1",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-remark-responsive-iframe": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",

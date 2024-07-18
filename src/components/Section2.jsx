@@ -68,6 +68,7 @@ const Section2 = () => {
                 p={item?.childMarkdownRemark?.frontmatter.text}
                 img={item?.childMarkdownRemark?.frontmatter.image}
                 key={index}
+                index={index}
               />
             )
           );

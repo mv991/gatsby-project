@@ -75,24 +75,24 @@ module.exports = {
           plugins: [`gatsby-remark-responsive-iframe`],
         },
       },
-      {
-        resolve: `gatsby-omni-font-loader`,
-        options: {
-            mode: "async",
-          enableListener: true,
-          preconnect: [ `https://fonts.gstatic.com`,`https://fonts.googleapis.com`],
-          web: [
-            {
-              name: `oswald`,
-              file: `https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap`,
-            },
-            {
-              name:'poppins',
-              file:'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'
-            }
-          ],
-        },
-      },
+      // {
+      //   resolve: `gatsby-omni-font-loader`,
+      //   options: {
+      //       mode: "async",
+      //     enableListener: true,
+      //     preconnect: [ `https://fonts.gstatic.com`,`https://fonts.googleapis.com`],
+      //     web: [
+      //       {
+      //         name: `oswald`,
+      //         file: `https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap`,
+      //       },
+      //       {
+      //         name:'poppins',
+      //         file:'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'
+      //       }
+      //     ],
+      //   },
+      // },
 // {
 //   resolve: `gatsby-plugin-google-fonts`,
 //   options: {
@@ -103,5 +103,6 @@ module.exports = {
 //     display: 'swap'
 //   }
 // }
+
   ]
 };
