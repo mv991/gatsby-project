@@ -10,18 +10,18 @@ const Section2 = () => {
     indexesRef.current = indexes;
   }, [indexes]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndexes((prevIndexes) => {
-        if (prevIndexes[0] === 0) {
-          return [2, 3];
-        } else {
-          return [0, 1];
-        }
-      });
-      return () => clearInterval(interval);
-    }, 4000);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIndexes((prevIndexes) => {
+  //       if (prevIndexes[0] === 0) {
+  //         return [2, 3];
+  //       } else {
+  //         return [0, 1];
+  //       }
+  //     });
+  //     return () => clearInterval(interval);
+  //   }, 4000);
+  // }, []);
   const data = useStaticQuery(graphql`
     query CarousalQuery {
       allFile(
@@ -59,18 +59,16 @@ const Section2 = () => {
           );
         })}
       </div>
-      <div className="w-full   sm:mx-auto  gap-8 sm:px-12  md:hidden flex justify-center">
+      <div className="w-full   sm:mx-auto  md:gap-8 md:px-12 sm:px-6 items-baseline carousal md:hidden flex sm:justify-center overflow-x-scroll">
         {data?.allFile?.nodes.map((item, index) => {
           return (
-            indexes.includes(index) && (
-              <CarousalItem
-                h={item?.childMarkdownRemark?.frontmatter.heading}
-                p={item?.childMarkdownRemark?.frontmatter.text}
-                img={item?.childMarkdownRemark?.frontmatter.image}
-                key={index}
-                index={index}
-              />
-            )
+            <CarousalItem
+              h={item?.childMarkdownRemark?.frontmatter.heading}
+              p={item?.childMarkdownRemark?.frontmatter.text}
+              img={item?.childMarkdownRemark?.frontmatter.image}
+              key={index}
+              index={index}
+            />
           );
         })}
       </div>

@@ -79,6 +79,7 @@ export const  data = graphql`
   `
 export const Head = () => (
   <>
+     <html lang="en" />
     <title>DMACC Website</title>
     <meta name="description" content="DMACC Website" />
   </>

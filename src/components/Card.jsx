@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Modal from "./Modal";
+import "@fontsource/oswald/500.css";
 const Card = () => {
   const [show, setShow] = useState(false);
   return (
@@ -11,9 +12,9 @@ const Card = () => {
             PRICING STARTS FROM
           </p>
           <h1 className="text-5xl font-[500] ">$ 425,000</h1>
-          <h1 className="text-2xl my-3 oswald">AED 1.3 Million</h1>
+          <h1 className="text-2xl my-3 ">AED 1.3 Million</h1>
           <button
-            className="text-white  py-4 w-full mx-auto text-[12px] rounded-md mt-6 font-[600] tracking-[2px]  bg-[#17ABFF] hover:scale-110"
+            className="text-white  py-4 w-full mx-auto text-[14px] rounded-md mt-6 font-[600] tracking-[2px]  bg-[#17ABFF] hover:scale-110"
             onClick={() => setShow(true)}
           >
             GET A PRESENTATION

@@ -63,7 +63,7 @@ const Section5 = ({ data, images, setImages }) => {
             onClick={() => {
               setLightboxImage(mainImg);
             }}
-            className="object-cover rounded-xl h-[300px] 2xl:h-[500px] cursor-pointer"
+            className="object-cover rounded-xl h-[300px] xl:h-[500px] cursor-pointer"
           >
             <GatsbyImage
               image={getImage(

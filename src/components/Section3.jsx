@@ -50,14 +50,14 @@ const Section3 = () => {
             <p className="text-start w-full text-[#17ABFF] font-[500] text-[20px]">
               DAMAC PRESENTS
             </p>
-            <h1 className="text-start w-full text-4xl oswald text-white font-[500] md:w-[400px] mr-auto w-[300px] ">
+            <h1 className="text-start w-full text-[36px] leading-[46px] oswald text-white font-[500] md:w-[400px] mr-auto w-[300px] ">
               WELCOME TO THE GLAMOUR OF HARBOUR LIGHTS
             </h1>
-            <p className="text-start w-full text-white text-lg  font-[300]">
+            <p className="text-start w-full text-white text-lg  font-[400]">
               Here waves, wonder, and love for the sea converge in a stunning
               52-storey collection of waterfront apartments.
             </p>
-            <p className="text-start w-full text-white text-lg mt-4  font-[300]">
+            <p className="text-start w-full text-white text-lg mt-4  font-[400]">
               Harbour Lights, a beacon of luxury and maritime passion, is the
               epitome of a waterfront dream. Experience the magic of Harbour
               Lights, where the beauty of the sea merges with residential bliss,
